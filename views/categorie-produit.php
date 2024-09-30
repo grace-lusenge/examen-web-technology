@@ -92,7 +92,7 @@
                 </tr>
 
                 <?php }?>
-                <!-- Les données des médicaments seront insérées ici -->
+                
             </tbody>
         </table>
        
