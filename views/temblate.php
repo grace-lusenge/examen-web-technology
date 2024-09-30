@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -51,7 +54,7 @@
 <body>
     <!-- Barre de navigation en tête -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
             <img src="images/pharmacy-logo.png" alt="Logo Pharmacie"> <!-- Chemin vers votre logo -->
             Gestion de Pharmacie
         </a>
@@ -61,23 +64,23 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Accueil</a>
+                    <a class="nav-link text-white" href="index.php">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">À propos</a>
+                    <a class="nav-link text-white" href="apropos.php">À propos</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contact</a>
-                </li>
+                
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="profile-pic">
-                            <img src="images/user-profile.png" alt="Profil Utilisateur"> <!-- Chemin vers votre image de profil -->
-                        </div>
+                            <img src="images/<?=$_SESSION['profilePicture']?>" alt="image">
+                       
+                       
                     </a>
+
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#">Profil</a>
-                        <a class="dropdown-item" href="#">Déconnexion</a>
+                        <p class='fs-2'><?= $_SESSION['firstname'].' '.$_SESSION['lastname']; ?></p>
+                        <a class="dropdown-item" href="../upload/upload-logout.php">Déconnexion</a>
                     </div>
                 </li>
             </ul>
@@ -91,11 +94,14 @@
         <a href="produit.php"><i class="bi bi-bag"></i> Produits</a>
         <a href="entree-produit.php"><i class="bi bi-box-arrow-in-down"></i> Entrée Produits</a>
         <a href="sortie-produit.php"><i class="bi bi-box-arrow-up"></i> Sortie Produits</a>
-        <a href="#"><i class="bi bi-cash"></i> Vente Produits</a>
+        <a href="vente.php"><i class="bi bi-cash"></i> Vente Produits</a>
+        <a href="raport-ventes.php"><i class="bi bi-chart"></i> Rapport de vente</a>
+        <a href="rapport-benefice.php"><i class="bi bi-graph-up"></i> Rapport de bénéfices</a>
         <a href="utilisateur.php"><i class="bi bi-person-circle"></i> Utilisateurs</a>
     </div>
-     <!-- Modal pour ajouter/modifier un médicament -->
+     <!-- Modal pour ajouter/modifier un médicament -->     
     <?=$contenu?>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
