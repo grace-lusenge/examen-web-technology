@@ -2,7 +2,7 @@
     class Connexion {
         private $host = "localhost";
         private $db_name = "pharmacie";
-        private $username = "root";
+        private $username = "muyisa";
         private $password = "";
         public $con;
 
