@@ -95,7 +95,7 @@
         <a href="entree-produit.php"><i class="bi bi-box-arrow-in-down"></i> Entrée Produits</a>
         <a href="sortie-produit.php"><i class="bi bi-box-arrow-up"></i> Sortie Produits</a>
         <a href="vente.php"><i class="bi bi-cash"></i> Vente Produits</a>
-        <a href="raport-ventes.php"><i class="bi bi-chart"></i> Rapport de vente</a>
+        <a href="rapport-ventes.php"><i class="bi bi-bar-chart"></i> Rapport de vente</a>
         <a href="rapport-benefice.php"><i class="bi bi-graph-up"></i> Rapport de bénéfices</a>
         <a href="utilisateur.php"><i class="bi bi-person-circle"></i> Utilisateurs</a>
     </div>
