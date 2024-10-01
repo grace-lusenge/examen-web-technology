@@ -22,8 +22,8 @@
             }
         } 
         else{
-            $req = $con->prepare("UPDATE sortie_produit SET date=?,description =?,id_entree_produit=?,quantite=? WHERE id =?");
-            if($req->execute([$date,$description,$id_entree_produit,$quantite,$idUp])){
+            $req = $con->prepare("UPDATE sortie_produit SET description =?,id_entree_produit=?,quantite=? WHERE id =?");
+            if($req->execute([$description,$id_entree_produit,$quantite,$idUp])){
                 header('Location:../views/sortie-produit.php?msg=La modification effectuer avec succès&status=success');
             }
             else{
