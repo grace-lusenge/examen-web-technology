@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">8
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion de Pharmacie</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
         }
         .navbar-brand {
             color: #fff !important; /* Couleur du texte du titre principal */
-            display: flex;
+            display: flex;8
             align-items: center;
         }
         .navbar-brand img {
@@ -72,10 +72,10 @@
                 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="profile-pic">
-                            <img src="images/<?=$_SESSION['profilePicture']?>" alt="images">
                        
-                       
+                      
+                       <h3 class="fw-bold text-uppercase"><?= $_SESSION['username'] ?></h3>                       
+                
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
