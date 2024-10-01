@@ -144,7 +144,7 @@
             $("#idDel").val(data[0]);
           
 
-            var valeur = data[1];
+            var valeur = data[2];
             setModal(label, valeur);
         });
     });
