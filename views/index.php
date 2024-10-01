@@ -15,7 +15,7 @@
 
                 <!-- Afficher l'alerte si l'URL contient ?error -->
                 <?php
-                    if(isset($_GET['status']) == 'error') {
+                    if(isset($_GET['error'])) {
                         ?>
                             <div class="alert alert-danger" role="alert">
                             Identifiants incorrects. Veuillez réessayer.
@@ -26,7 +26,7 @@
                 ?>
               
 
-                <form action="../upload/upload-login.php" method="POST" class="row" >
+                <form action="../upload/upload-index.php" method="POST" class="row" >
                     <div class="mb-3 mr-4 ml-4">
                         <label for="username" class="form-label fs-4 fw-medium fst-italic">Nom d'utilisateur :</label>
                         <input type="text" class="form-control " id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
