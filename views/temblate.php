@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">8
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion de Pharmacie</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
         }
         .navbar-brand {
             color: #fff !important; /* Couleur du texte du titre principal */
-            display: flex;
+            display: flex;8
             align-items: center;
         }
         .navbar-brand img {
@@ -54,7 +54,7 @@
 <body>
     <!-- Barre de navigation en tête -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="acceuil.php">
             <img src="images/pharmacy-logo.png" alt="Logo Pharmacie"> <!-- Chemin vers votre logo -->
             Gestion de Pharmacie
         </a>
@@ -64,7 +64,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="index.php">Accueil</a>
+                    <a class="nav-link text-white" href="acceuil.php">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="apropos.php">À propos</a>
@@ -72,7 +72,10 @@
                 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       
+                      
                        <h3 class="fw-bold text-uppercase"><?= $_SESSION['username'] ?></h3>                       
+                
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">

@@ -11,7 +11,7 @@ $titre="acceuil"
                 <h2 class="my-4 bg-success text-white p-3">POLY-PHARMACY</h2>
                 <div class="text-center">
                 
-            <img src="images/pharmacy-logo.png" class="img-fluid rounded">
+            <img src=" images/pharmacy-logo.png" class="img-fluid rounded">
             </div>
             <p class="mt-4">Gérez facilement votre pharmacie avec notre application.</p>
             <div class="container float-left">
