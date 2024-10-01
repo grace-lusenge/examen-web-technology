@@ -54,7 +54,7 @@
 <body>
     <!-- Barre de navigation en tête -->
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="acceuil.php">
             <img src="images/pharmacy-logo.png" alt="Logo Pharmacie"> <!-- Chemin vers votre logo -->
             Gestion de Pharmacie
         </a>
@@ -64,7 +64,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="index.php">Accueil</a>
+                    <a class="nav-link text-white" href="acceuil.php">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="apropos.php">À propos</a>
