@@ -15,15 +15,16 @@
         //die(var_dump(password_verify($password,strval($pwd))));
         if(password_verify($password,strval($pwd))) {
             $_SESSION['id'] = $user->id;
+            $_SESSION['username'] = $user->nom_utilisateurs;
             $_SESSION['firstname'] = $user->firstname;
             $_SESSION['lastname'] = $user->lastname;
             $_SESSION['profilePicture'] = $user->profilePhoto;
             //die(var_dump($_SESSION['profilePicture']));
 
-            header("Location:../views/index.php?success");
+            header("Location:../views/acceuil.php?success");
             exit();
         } else {
-            header("Location:../views/login.php?error&msg='Identifiant incorrect. Reessayer svp!!!'");
+            header("Location:../views/index.php?error&msg='Identifiant incorrect. Reessayer svp!!!'");
             exit();
         }
     }
