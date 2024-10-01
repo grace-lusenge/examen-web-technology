@@ -73,7 +73,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="profile-pic">
-                            <img src="images/<?=$_SESSION['profilePicture']?>" alt="image">
+                            <img src="images/<?=$_SESSION['profilePicture']?>" alt="images">
                        
                        
                     </a>
